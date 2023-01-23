@@ -1,6 +1,6 @@
 /******************************************************************************
 
-Two Pointer Minimum and maximum rearrangement in array 
+Array Rotation
 
 
 Input: 
