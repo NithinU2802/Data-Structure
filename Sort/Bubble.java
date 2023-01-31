@@ -29,6 +29,7 @@ public class Main
 	        if(a[j]>a[j+1]) swap(a,j,j+1);
 	    }
        for(int z: a) System.out.print(z+" ");
+       System.out.println();
 	}
 	}
 }
