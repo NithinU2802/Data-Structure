@@ -28,7 +28,7 @@ public class Main
 	    for(int j=0;j<n-i-1;j++){
 	        if(a[j]>a[j+1]) swap(a,j,j+1);
 	    }
+       for(int z: a) System.out.print(z+" ");
 	}
-	for(int i: a) System.out.print(i+" ");
 	}
 }
