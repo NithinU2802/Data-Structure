@@ -12,13 +12,10 @@ import java.util.*;
 
 public class Main
 {
-    public static void swap(int a,int b){
-        int t=a;
-        a=b;
-        b=a;
-        // a^=b;
-        // b^=a;
-        // a^=b;
+     static void swap(int[] a,int i,int j){
+        int t=a[i];
+        a[i]=a[j];
+        a[j]=t;
     }
     
 	public static void main(String[] args) {
@@ -32,11 +29,9 @@ public class Main
 	    for(int j=i+1;j<n;j++){
 	        if(a[j]<a[t]) t=j;
 	    }
-	    if(t!=i){
-	        a[i]^=a[t];
-	        a[t]^=a[i];
-	        a[i]^=a[t];
-	    }
+	    
+	    //call by value whereas it doesn't support call by reference
+	    if(t!=i) swap(a,i,t);
 	}
 	for(int i: a) System.out.print(i+" ");
 	}
