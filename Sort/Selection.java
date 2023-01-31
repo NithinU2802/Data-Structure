@@ -32,7 +32,9 @@ public class Main
 	    
 	    //call by value whereas it doesn't support call by reference
 	    if(t!=i) swap(a,i,t);
+		
+	   for(int z: a) System.out.print(z+" ");
+           System.out.println();
 	}
-	for(int i: a) System.out.print(i+" ");
 	}
 }
